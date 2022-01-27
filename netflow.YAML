@@ -88,7 +88,7 @@ files:
            index: 0
 
            # 点 ID 的数据类型，可选值为 int 和 string，分别对应 Nebula Graph 中的 INT64 和 FIXED_STRING。
-           type: string
+           type: int
 
         # Tag 设置。   
         tags:
@@ -134,14 +134,14 @@ files:
         # 起始点 ID 设置。
         srcVID:
            # 数据类型。
-           type: string
+           type: int
 
            # 起始点 ID 对应 CSV 文件中列的序号。
            index: 0
 
         # 目的点 ID 设置。
         dstVID:
-           type: string
+           type: int
            index: 1
 
         # Edge type 内的属性设置。
