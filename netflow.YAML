@@ -30,7 +30,7 @@ clientSettings:
     # 配置连接 Nebula Graph 服务器之后，在插入数据之前执行的一些操作。
     commands: |
       DROP SPACE IF EXISTS test;
-      CREATE SPACE IF NOT EXISTS test(partition_num=5, replica_factor=1, vid_type=FIXED_STRING(20));
+      CREATE SPACE IF NOT EXISTS test(partition_num=5, replica_factor=1, vid_type=INT64);
       USE test;
       CREATE TAG host(ip string,port int);
       CREATE EDGE flow(start_time datetime, protocol string, packet_num int , byte_num int);
